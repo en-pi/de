@@ -1,0 +1,48 @@
+// =====================
+// Color variables
+// =====================
+
+// Color-Codes:
+$lemon-glacier: #EEFE01;
+$gun-metal: #0C2D37;
+
+$white: #fff;   
+$grey: #aaa;
+$black: #000;
+
+// Color-Theme
+$default-color: $black;
+$default-background-color: $white;
+
+$highlight-color01: $gun-metal;
+$highlight-color02: $lemon-glacier;
+$highlight-color03: $black;
+
+$text-color: $highlight-color01;
+$link-color: $highlight-color01;
+$visited-link-color: $highlight-color03;
+
+$header-bg-color:  $white;
+$header-text-color: $highlight-color03;
+
+// Colors in Document
+$color-bg-section-title: $black;
+$color-font-section-title: $white; // font-color muss über section > p {} gesetzt werden damit sie funktioniert!!
+
+$color-bg-section-info: $white;
+$color-font-section-info: $default-color;
+
+$color-bg-section-projects: $highlight-color02;
+$color-font-section-projects: $text-color;
+
+$color-bg-section-team: $highlight-color03;
+$color-font-section-team: $default-color;
+
+$color-bg-section-press: $text-color;
+$color-font-section-press: $white;
+
+$color-bg-section-contact: $highlight-color02;
+
+$color-bg-section-footer: $black;
+
+$color-bg-section-neutral: $white;

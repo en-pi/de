@@ -1,0 +1,161 @@
+.enpi-section {
+
+  @include cols($colspan: 1, $total-cols: 1);
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+  }
+
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    flex: 0 0 50%;
+    @include cols($colspan: 6);
+  }
+
+  padding: 4.5rem 2rem;
+  min-width: 0;
+
+  &-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+      align-content: flex-end;
+    }
+  }
+}
+
+.screenshot {
+  display: flex;
+  justify-content: end;
+  padding: 4.5rem 0 4.5rem 3rem;
+}
+
+.network-logo {
+  flex: 1 1 auto;
+  margin: 1rem;
+
+  &-1 {
+    background: url(/assets/img/IHB-Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 79px;
+    width: 162px;
+  }
+
+  &-2 {
+    background: url(/assets/img/BetterTogether_Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 110px;
+    width: 162px;
+  }
+
+  &-3 {
+    background: url(/assets/img/1441.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 116px;
+    width: 162px;
+  }
+
+  &-4 {
+    background: url(/assets/img/Logo_Partner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 111px;
+    width: 162px;
+  }
+
+  &-5 {
+    background: url(/assets/img/SWN.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 64px;
+    width: 357px;
+  }
+}
+
+main {
+  .enpi-section {
+    min-height: 100vh;
+  }
+}
+
+.hero-section {
+  padding: 2rem;
+  min-width: 0;
+}
+
+.highlight-bg {
+  background-color: $highlight-color02;
+}
+
+.highlight-bg-half {
+  background: linear-gradient(180deg, $highlight-color02 50%, $white 50%);
+
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    background: linear-gradient(90deg, $highlight-color02 50%, $white 50%);
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    align-content: flex-end;
+  }
+}
+
+
+.material-icons-outlined.enpi-blue {
+  color: $highlight-color01;
+}
+
+blockquote::before {
+  content: "“";
+  font-family: $headline-font-family;
+  font-style: normal;
+  font-size: 16rem;
+  //background-image: url('/assets/img/check_circle_outline-black-18dp.svg');
+  //background-size: contain;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left: -0.8rem;
+  top: 4rem;
+  margin-right: 0.5rem;
+  margin-top: -6rem;
+}
+
+
+
+ul {
+  list-style: none;
+  margin: 0 0 0 4rem;
+  padding: 0;
+
+  li {
+    text-indent: -2.8rem
+  }
+
+  li::before {
+    content: "";
+    background-image: url('/assets/img/Rectangle822.svg');
+    background-size: cover;
+    display: inline-block;
+    width: 2rem;
+    height: 1.09rem;
+    position: relative;
+    margin-right: 0.7rem;
+    left: -1rem;
+    top: 0.2rem;
+
+    @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+      margin-right: 0.5rem;
+      top: 0;
+    }
+  }
+}

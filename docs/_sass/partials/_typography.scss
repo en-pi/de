@@ -1,0 +1,197 @@
+%text {
+  color: $text-color;
+  font: {
+    family: $base-font-family;
+    size: 1rem;
+    weight: $regular;
+  }
+  letter-spacing: 1.5 * $to-rems + rem;
+  line-height: 24 * $to-rems + rem;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 1.5rem; 
+    line-height: 38 * $to-rems + rem;
+
+  }
+}
+
+%headlinetext {
+  color: $text-color;
+  font-family: $headline-font-family;
+  font-weight: $regular;
+  letter-spacing: 1 * $to-rems + rem;
+  margin-bottom: 1rem;
+}
+
+%headertext {
+  color: $header-text-color;
+  font: {
+    family: $header-font-family;
+    size: 40 * $to-rems + rem;
+    weight: $header-font-weight;
+  }
+  letter-spacing: 2 * $to-rems + rem;
+}
+
+.site-title {
+  @extend %headertext;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 80 * $to-rems + rem;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    font-size: 160 * $to-rems + rem;
+  }
+}
+
+h1 {
+  @extend %headlinetext;
+  font-size: 2.5rem;
+
+  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  @extend %text;
+  font-size: 1.25rem;
+  font-weight: $fw-bold;
+  line-height: 32 * $to-rems + rem;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 2.5rem;
+    line-height: 50 * $to-rems + rem;
+  }
+}
+
+h3 {
+  @extend %headlinetext;
+  font-size: 1.5rem;
+  letter-spacing: .03rem;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 40 * $to-rems + rem; 
+  }
+}
+
+h4 {
+  @extend %text;
+  font-size: 1rem;
+  font-weight: $fw-semibold;
+  line-height: 24 * $to-rems + rem;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 24 * $to-rems + rem; 
+    line-height: 32 * $to-rems + rem;
+  }
+}
+
+h5 {
+  @extend %text;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem
+}
+
+h6 {
+  @extend %text;
+  font-size: 1rem;
+  line-height: 24 * $to-rems + rem;
+}
+
+p {
+  @extend %text;
+  padding-bottom: 28 * $to-rems + rem;
+
+  > a {
+    color: $text-color;
+    text-decoration: underline;
+
+    &:visted {
+      color: $visited-link-color;
+    }
+
+    &:hover {
+      color: $visited-link-color;
+    }
+  }
+}
+
+footer {
+  h5, p, a, a:hover{
+    font-size: 1rem;
+    letter-spacing: 0rem;;
+    line-height: 1.5rem;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 16 * $to-rems + rem;
+}
+
+strong {
+  font-weight: $fw-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-bottom: 32 * $to-rems + rem;
+  padding-left: 2rem;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-bottom: 32 * $to-rems + rem;
+  padding-left: 2rem;
+}
+
+ul ul,
+ol ul {
+  list-style-type: circle;
+}
+
+ul ul ul,
+ol ul ul,
+ol ol ul {
+  list-style-type: square;
+}
+
+li {
+  @extend %text;
+  display: list-item;
+}
+
+dl {
+  @extend %text;
+  display: block;
+  margin-bottom: 32 * $to-rems + rem;
+}
+
+dt {
+  font-weight: $fw-bold;
+}
+
+dd {
+  padding-left: 2rem;
+}
+
+%menutext {
+  @extend %headertext;
+  font: {
+    family: $header-font-family;
+    weight: $regular;
+  }
+}
+
+.header__menu-top {
+  @extend %menutext;
+}
