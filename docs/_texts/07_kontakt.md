@@ -4,7 +4,7 @@
 <br>
 E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 <br>
-Tel.: +49 176 32 827 098
+Tel.: +49 151 44 941 515
 <br>
 <a href="{{ "/" | relative_url }}">www.numcamp.de</a>
 <br>
