@@ -6,9 +6,7 @@ E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 <br>
 Tel.: +49 151 44 941 515
 <br>
-<a href="{{ site.url }}">{{ site.url }}</a>
-<br>
-<a href="{{ "/de" | relative_url }}">testtext</a>
+<a href="{{ "/de" | relative_url }}">numcamp.com/de</a>
 <br>
 <br>
 Mehr zu uns auf:  
